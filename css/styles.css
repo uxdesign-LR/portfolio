@@ -113,11 +113,22 @@ hr {
   opacity: 0.25;
 }
 
+h3{
+  margin-top: 1.5rem !important;
+}
 
+.h2-bold{
+  font-weight: 600;
+}
+
+.centred-title{
+  text-align: center !important;
+  margin-bottom: 1rem !important;
+}
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem !important;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -268,6 +279,10 @@ samp {
   font-size: 1em;
 }
 
+.end-section{
+  margin-bottom: 5rem;
+}
+
 pre {
   display: block;
   margin-top: 0;
@@ -288,6 +303,15 @@ code {
 }
 a > code {
   color: inherit;
+}
+
+.link-in-text-white{
+  color: #ffffff;
+  font-weight: 600;
+}
+
+a:hover{
+  color: #610B0B;
 }
 
 kbd {
@@ -349,7 +373,7 @@ button {
 
 .image-button {
   display: inline-block;
-  margin: 0.5rem;
+  margin: 0.2rem;
   cursor: pointer; /* Pointer cursor on hover */
   transition: transform 0.2s ease-in-out, padding 0.1s ease-in-out;
 }
@@ -361,6 +385,17 @@ button {
 
 .image-button:active {
   transform: scale(0.98); /* Slightly shrink the button when active/clicked */
+}
+
+.image-centred{
+ display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.test{
+  display:flex;
 }
 
 .light-text-color{
@@ -511,7 +546,7 @@ progress {
 
 .lead{
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 500 !important;
   margin-bottom: 3rem;
 }
 
@@ -525,6 +560,11 @@ progress {
 .lead-bottom {
   font-size: 1.25rem;
   font-weight: 500;
+}
+
+.short-section{
+  padding-top: 6rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .display-1 {
@@ -3877,11 +3917,15 @@ textarea.form-control-lg {
   margin-top: 50px !important;
 }
 
+.image-bw-text{
+  margin-bottom: 1rem !important;
+}
+
 .container-grid, .container-grid-paragraph {
   display: flex;              /* Enables Flexbox */
   flex-wrap: wrap;            /* Allows wrapping to the next line if necessary */
-  justify-content: space-between; /* Distributes space between items */
-  gap:2rem 2rem;                  /* Adds some space between the items */
+  justify-content: center; /* Distributes space between items */
+  gap:3rem;                  /* Adds some space between the items */
   width: auto;
 }
 
@@ -3929,6 +3973,10 @@ textarea.form-control-lg {
 .navbar-nav-scroll {
   max-height: var(--bs-scroll-height, 75vh);
   overflow-y: auto;
+}
+
+.nav-portfolio{
+  border-left: solid 0.1px rgba(255, 255, 255, 0.55);
 }
 
 @media (min-width: 576px) {
@@ -8138,6 +8186,12 @@ textarea.form-control-lg {
   color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
 }
 
+.footer-link{
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0.5rem;
+}
+
 .text-light {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
@@ -8385,10 +8439,9 @@ textarea.form-control-lg {
 
 .item {
   text-align: center;
-  display: flex;
   justify-content: center;
   align-items: top;
-  color:#610B0B
+  color:#610B0B;
 }
 
 @media (min-width: 576px) {
